@@ -1,9 +1,9 @@
 #!/bin/sh
 ## 更新源,如果源有问题的同学，请参考https://github.com/JackYang500/ubuntu-aliyun-sources
-sudo apt-get update
+apt-get update
 
 ## 安装PPTP服务
-sudo apt-get -y install pptpd || {
+apt-get -y install pptpd || {
   echo "无法定位软件，请检查源或依赖"
   exit 1
 }
